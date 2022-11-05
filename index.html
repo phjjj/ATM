@@ -7,24 +7,43 @@
     <title>Document</title>
     <script defer src="./face-api.min.js"></script>
     <script defer src="./script.js"></script>
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        canvas {
-            position: absolute;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <video id="video" width="1000" height="1000" autoplay muted></video>
+    <div class="header">
+        <h1>경운은행</h1>
+    </div>
+
+    <div class="container">
+
+        <ul class="main-left">
+            <li>예금인출</li>
+            <li>조회</li>
+            <li>계좌이체(송금)/CMS/해외송금</li>
+            <li>입 금</li>
+            <li>통장 / 보험정리</li>
+            <li>무통장 / 무카드 거래</li>
+            <li>개인정보변경</li>
+        </ul>
+
+    <div>
+        <div class="main-center">
+            <span>거래를 선택하여 주십시오</span>
+        </div>
+        <video id="video" width="300" height="300" autoplay muted></video>
+   
+    </div>
+        <ul class="main-right">
+            <li>신용카드</li>
+            <li>지로 / 공과금 / 대학등록금</li>
+            <li>전자통장 / T-money거래</li>
+            <li>사고 신고</li>
+            <li>Language</li>
+        </ul>
+    </div>
+
+    
 </body>
 </html>
