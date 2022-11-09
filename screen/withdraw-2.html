@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/bacground.css" />
+    <link rel="stylesheet" href="../css/withdraw.css" />
   </head>
   <body>
     <div class="header">
@@ -17,26 +18,26 @@
     </div>
 
     <div class="container">
-      <ul class="main-left">
-        <button class="btn">5만원</button>
-        <button class="btn">10만원</button>
-        <button class="btn">15만원</button>
-        <button class="btn">20만원</button>
-        <button class="btn">기타금액</button>
-      </ul>
-
-      <div class="main-center">
-        <div>
-          <span>출금하실금액을 선택해주십시오.</span>
+      <div class="main-left">
+        <div class="left-box">
+          <span
+            >출금하실 금액을 확인하신 후, 맞으면 [확인], 틀리면[취소]를
+            누르십시오.</span
+          >
+        </div>
+        <div class="left-box">
+          <input readonly />
+          <span>만원</span>
         </div>
       </div>
-      <ul class="main-right">
-        <button class="btn">30만원</button>
-        <button class="btn">40만원</button>
-        <button class="btn">50만원</button>
-        <button class="btn">70만원</button>
-        <button class="btn">100만원</button>
-      </ul>
+      <div class="main-right">
+        <button class="btn-cancel" onclick="location.href='withdraw.html'">
+          취소
+        </button>
+        <button class="btn-confirm" onclick="location.href='process.html'">
+          확인
+        </button>
+      </div>
     </div>
     <script src="../js/withdraw.js"></script>
   </body>

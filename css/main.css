@@ -17,6 +17,11 @@
   font-size: 20px;
 }
 
+.main-left,
+.main-right{
+  margin-top: 150px;
+}
+
 .main-center > :nth-child(1) {
   display: inline-block;
   width: 500px;

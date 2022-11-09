@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  font-size: 40px;
+}
+
+.text-box {
+  display: flex;
+  background-color: white;
+  width: 50%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.loading-box {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.loading-box > div {
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: white;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+}
