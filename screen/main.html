@@ -8,14 +8,14 @@
     <script defer src="../js/face-api.min.js"></script>
     <script defer src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/container.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/bacground.css" />
   </head>
   <body>
     <div class="header">
-      <h1>시발은행</h1>
+      <h1>동욱은행</h1>
     </div>
 
     <div class="container">
@@ -27,7 +27,13 @@
         >
           예금인출
         </button>
-        <button class="btn">조회</button>
+        <button
+          class="btn"
+          type="button"
+          onclick="location.href='reference.html'"
+        >
+          조회
+        </button>
         <button class="btn">입 금</button>
         <button class="btn">통장 / 보험정리</button>
         <button class="btn">무통장 / 무카드 거래</button>
@@ -37,8 +43,8 @@
         <div>
           <span>거래를 선택하여 주십시오</span>
         </div>
-        <div>
-          <video id="video" width="300" height="300" autoplay muted></video>
+        <div class="main-center-box">
+          <video id="video" autoplay muted></video>
         </div>
       </div>
       <ul class="main-right">

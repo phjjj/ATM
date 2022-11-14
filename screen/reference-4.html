@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/container-box.css" />
-    <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/bacground.css" />
   </head>
   <body>
@@ -18,14 +18,21 @@
 
     <div class="container">
       <div class="container-title">
-        <sapn>비밀번호 입력 주의!</sapn>
+        <sapn>거래내역 조회</sapn>
       </div>
       <div class="container-box">
         <p>
-          타인이나 불법 카메라에 노출되지 않도록 손이나 책 등으로 충분히 가린 뒤
-          비밀번호를 입력하시기 바랍니다 거래를 계속 하시려면 확인버튼을
-          눌러주십시오
+          추가 거래내역을 확인하실려면 [다음]을, 종료하시려면 [확인]을
+          눌러주세요.
         </p>
+        <div class="container-box">
+          <span>계좌번호</span>
+          <span>예금주명</span>
+          <span>잔액</span>
+          <span>출금가능 금액</span>
+          <span>거래일 구분</span>
+          <span>거래금액</span>
+        </div>
       </div>
     </div>
 
@@ -43,7 +50,7 @@
         <button
           class="btn-confirm"
           type="button"
-          onclick="location.href='password.html'"
+          onclick="location.href='end.html'"
         >
           확인
         </button>

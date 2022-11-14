@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
 
+    <link rel="stylesheet" href="../css/container.css" />
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/container-box.css" />
     <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/bacground.css" />
+    <link rel="stylesheet" href="../css/center-box.css" />
   </head>
   <body>
     <div class="header">
@@ -17,20 +19,7 @@
     </div>
 
     <div class="container">
-      <div class="container-title">
-        <sapn>비밀번호 입력 주의!</sapn>
-      </div>
-      <div class="container-box">
-        <p>
-          타인이나 불법 카메라에 노출되지 않도록 손이나 책 등으로 충분히 가린 뒤
-          비밀번호를 입력하시기 바랍니다 거래를 계속 하시려면 확인버튼을
-          눌러주십시오
-        </p>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div>
+      <div class="main-left">
         <button
           class="btn-cancel"
           type="button"
@@ -39,15 +28,21 @@
           취소
         </button>
       </div>
-      <div>
-        <button
-          class="btn-confirm"
-          type="button"
-          onclick="location.href='password.html'"
-        >
-          확인
-        </button>
+
+      <div class="main-center">
+        <div>
+          <span>거래선택</span>
+        </div>
+        <div class="main-center-box">
+          <span>원하시는 거래를 선택해 주십시오.</span>
+        </div>
       </div>
+      <ul class="main-right">
+        <button class="btn">잔액조회</button>
+        <button class="btn" onclick="location.href='reference-3.html'">
+          거래내역 조회
+        </button>
+      </ul>
     </div>
   </body>
 </html>

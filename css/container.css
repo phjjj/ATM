@@ -7,7 +7,13 @@
   height: 700px;
 }
 
-.main-center,
+.main-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-right,
 .main-left {
   display: flex;
@@ -18,7 +24,7 @@
 }
 
 .main-left,
-.main-right{
+.main-right {
   margin-top: 150px;
 }
 
