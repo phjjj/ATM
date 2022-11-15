@@ -14,8 +14,8 @@
   text-shadow: 0px 1px 0px #ffffff;
 }
 .btn:hover {
-  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-  background-color: #dfdfdf;
+  background: linear-gradient(to bottom, #A9AEA6 5%, #A9AEA6 100%);
+  background-color: #A9AEA6;
 }
 .btn:active {
   position: relative;

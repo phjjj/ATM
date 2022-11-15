@@ -1,19 +1,13 @@
-
-
 .container {
+  display: flex;
   height: 70vh;
-  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
   margin-top: 20px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  justify-content: center;
 }
 
 .container-title {
-  display: block;
-  background-color: #3eaf5e;
-  color: white;
-  border-radius: 30px;
-  text-align: center;
-  padding: 50px 0px;
-  font-size: 40px;
 }
 
 .container-box {
@@ -22,6 +16,18 @@
   margin-top: 40px;
 }
 
+.container-box-2 {
+  display: flex;
+  margin-top: 30px;
+  background-color: #c5ae35;
+  border-radius: 30px;
+  justify-content: space-around;
+  height: 70%;
+}
+
+.container-box-2 > span {
+  margin-top: 30px;
+}
 .container-box > span {
   display: flex;
   margin: 40px;
@@ -37,4 +43,16 @@
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+}
+
+.main-center-box {
+  display: flex;
+  width: 640px;
+  height: 490px;
+  background-color: rgba(217, 217, 217, 1);
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+
 }

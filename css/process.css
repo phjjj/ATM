@@ -9,12 +9,12 @@
 
 .text-box {
   display: flex;
-  background-color: white;
+  border-radius: 30px;
+  background-color: #d9d9d9;
   width: 50%;
   height: 30%;
   justify-content: center;
   align-items: center;
-  
 }
 .loading-box {
   display: flex;
@@ -27,7 +27,7 @@
   width: 120px;
   text-align: center;
   padding-top: 20px;
-  background-color: white;
+  background-color: #d9d9d9;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
   background-color: #ededed;
