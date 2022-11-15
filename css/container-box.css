@@ -1,18 +1,4 @@
-.header {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-  background-color: #ededed;
-  border-radius: 6px;
-  border: 1px solid #dcdcdc;
-  font-family: Arial;
-  font-weight: bold;
-}
+
 
 .container {
   height: 70vh;
@@ -22,7 +8,7 @@
 
 .container-title {
   display: block;
-  background-color: blue;
+  background-color: #3eaf5e;
   color: white;
   border-radius: 30px;
   text-align: center;
@@ -37,8 +23,8 @@
 }
 
 .container-box > span {
-    display: flex;
-    margin: 40px;
+  display: flex;
+  margin: 40px;
 }
 
 .container-box > img {

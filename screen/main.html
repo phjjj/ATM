@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/bacground.css" />
+    <style>
+      canvas {
+        position: absolute;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -22,7 +27,7 @@
       <ul class="main-left">
         <button
           class="btn"
-          type="button"
+          type="button"2
           onclick="location.href='caution.html'"
         >
           예금인출
@@ -34,7 +39,13 @@
         >
           조회
         </button>
-        <button class="btn">입 금</button>
+        <button
+          class="btn"
+          type="button"
+          onclick="location.href='deposit.html'"
+        >
+          입 금
+        </button>
         <button class="btn">통장 / 보험정리</button>
         <button class="btn">무통장 / 무카드 거래</button>
       </ul>
@@ -44,7 +55,7 @@
           <span>거래를 선택하여 주십시오</span>
         </div>
         <div class="main-center-box">
-          <video id="video" autoplay muted></video>
+          <video id="video" width="300" height="300" autoplay muted></video>
         </div>
       </div>
       <ul class="main-right">

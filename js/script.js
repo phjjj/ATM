@@ -40,7 +40,7 @@ video.addEventListener('play', () => {
     });
     console.log(testAge)
     
-    if (testAge >=60) {
+    if (testAge >=40) {
       changePage()
     }
 
