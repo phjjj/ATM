@@ -1,4 +1,4 @@
-const video = document.getElementById("video")
+const video = document.getElementById("video");
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri("../models"),
@@ -19,37 +19,35 @@ function startVideo() {
     });
 }
 
-video.addEventListener('play', () => {
-  const canvas = faceapi.createCanvasFromMedia(video)
-  const displaySize = { width: video.width, height: video.height}
-  faceapi.matchDimensions(canvas, displaySize)
+video.addEventListener("play", () => {
+  const canvas = faceapi.createCanvasFromMedia(video);
+  const displaySize = { width: video.width, height: video.height };
+  faceapi.matchDimensions(canvas, displaySize);
   setInterval(async () => {
-    const detections = await faceapi.detectAllFaces(video,
-    new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks
-    ().withFaceExpressions().withAgeAndGender()
-    console.log(detections)
-    const resizedDetections = faceapi.resizeResults(detections, displaySize)
-    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
-    faceapi.draw.drawDetections(canvas, resizedDetections)
-    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
-    faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
+    const detections = await faceapi
+      .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
+      .withFaceLandmarks()
+      .withFaceExpressions()
+      .withAgeAndGender();
+    console.log(detections);
+    const resizedDetections = faceapi.resizeResults(detections, displaySize);
+    canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+    faceapi.draw.drawDetections(canvas, resizedDetections);
+    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
 
-    resizedDetections.forEach(result => {
+    resizedDetections.forEach((result) => {
       const { age, gender, genderProbability } = result;
-      testAge = age
+      testAge = age;
     });
-    console.log(testAge)
-    
-    if (testAge >=40) {
-      changePage()
+    console.log(testAge);
+
+    if (testAge >= 55) {
+      changePage();
     }
 
     function changePage() {
-      location.href="index2.html"
+      location.href = "index2.html";
     }
-
-
-  }, 600)
-
-
-})
+  }, 600);
+});
