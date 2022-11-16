@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
     <script defer src="../js/face-api.min.js"></script>
     <script defer src="../js/script.js"></script>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="../css/container.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/button.css" />
-    <link rel="stylesheet" href="../css/bacground.css" />
+    <link rel="stylesheet" href="../css/background.css" />
   </head>
   <body>
     <div class="header">
@@ -23,14 +24,15 @@
         <button
           class="btn"
           type="button"
-          onclick="location.href='caution.html'"
+          onclick="location.href='withdraw/caution.html'"
+          data-transition="fade"
         >
           예금인출
         </button>
         <button
           class="btn"
           type="button"
-          onclick="location.href='reference.html'"
+          onclick="location.href='reference/reference.html'"
         >
           조회
         </button>
@@ -41,7 +43,13 @@
         >
           입 금
         </button>
-        <button class="btn">통장 / 보험정리</button>
+        <button
+          class="btn"
+          type="button"
+          onclick="location.href='bankbook/insert.html'"
+        >
+          통장정리
+        </button>
         <button class="btn">무통장 / 무카드 거래</button>
       </ul>
 

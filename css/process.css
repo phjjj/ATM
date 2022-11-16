@@ -28,9 +28,42 @@
   text-align: center;
   padding-top: 20px;
   background-color: #d9d9d9;
-  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  
   background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
   background-color: #ededed;
   border-radius: 6px;
-  border: 1px solid #dcdcdc;
+  
+}
+
+.start {
+  animation: pulse 1.5s;
+}
+
+.progress {
+  animation: pulse 1.5s;
+  animation-delay: 1.5s;
+}
+
+.completion {
+  animation: pulse 1.5s;
+  animation-delay: 3s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.7;
+    background: green;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 1;
+    background: green;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    background: green;
+  }
 }

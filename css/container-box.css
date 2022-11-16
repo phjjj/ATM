@@ -7,9 +7,6 @@
   justify-content: center;
 }
 
-.container-title {
-}
-
 .container-box {
   text-align: center;
   font-size: 30px;
@@ -37,6 +34,22 @@
   padding: 5% 0px;
   width: 300px;
   height: 300px;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.7);
+    opacity: 0.8;
+  }
 }
 
 .footer {
@@ -54,5 +67,4 @@
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-
 }
