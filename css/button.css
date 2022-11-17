@@ -1,25 +1,58 @@
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #a9aea6 5%, #dfdfdf 100%);
-  background-color: #a9aea6;
-  border-radius: 6px;
-  border: 1px solid #dcdcdc;
-  font-family: Arial;
-  font-weight: bold;
+  background-color: silver;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "BenchNine", Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  position: relative;
+  text-transform: uppercase;
   width: 300px;
   height: 80px;
-  text-shadow: 0px 1px 0px #ffffff;
 }
-.btn:hover {
-  background: linear-gradient(to bottom, #a9aea6 5%, #a9aea6 100%);
-  background-color: #a9aea6;
+
+.btn:before,
+.btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
 }
-.btn:active {
-  position: relative;
-  top: 1px;
+
+.btn:before {
+  border-color: white;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -5px;
+  top: -5px;
+}
+.btn:after {
+  border-bottom-width: 2px;
+  border-color: white;
+  border-left-width: 2px;
+  bottom: -5px;
+  left: -5px;
+}
+.btn:hover,
+.btn.hover {
+  background-color: white;
+}
+.btn:hover:before,
+.btn.hover:before,
+.btn:hover:after,
+.btn.hover:after {
+  height: 100%;
+  width: 100%;
 }
 
 .btn-cancel {
