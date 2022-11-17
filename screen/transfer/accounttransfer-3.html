@@ -9,30 +9,24 @@
     <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="../../css/button.css" />
     <link rel="stylesheet" href="../../css/background.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
   </head>
   <body>
     <div class="header">
-      <h1>비 밀 번 호</h1>
+      <h1>전 화 번 호</h1>
     </div>
 
     <div class="container">
       <div class="main-left">
         <div class="box-text">
-          <span>비밀번호를 눌러주십시오</span>
+          <span>계좌번호를 누르시고 [확인]을 눌러 주십시오.</span>
         </div>
         <div>
-          <input readonly maxlength="4" />
+          <input readonly />
         </div>
       </div>
 
       <div class="main-right">
-        <button
-          class="btn-cancel"
-          type="button"
-          onclick="location.href='../main.html'"
-        >
-          취소
-        </button>
         <div class="numberpad">
           <button class="number" onclick="input.value=input.value+'1'">
             1
@@ -67,8 +61,25 @@
           </button>
           <button onclick="input.value=null">정정</button>
         </div>
+        <div class="footer">
+          <button
+            class="btn-cancel"
+            type="button"
+            onclick="location.href='../main.html'"
+          >
+            취소
+          </button>
+          <button
+            class="btn-confirm"
+            type="button"
+            onclick="location.href='accounttransfer-4.html'"
+          >
+            확인
+          </button>
+        </div>
       </div>
     </div>
-    <script defer src="../../js/password2.js"></script>
+
+    <script defer src="../../js/transfer-2.js"></script>
   </body>
 </html>
