@@ -8,7 +8,7 @@ for (var i = 0; i < money.length; i++) {
   const value = money[i].value;
   function sibal() {
     location.href = "withdraw-2.html";
-    console.log(value);
+
     window.name = value;
   }
 }

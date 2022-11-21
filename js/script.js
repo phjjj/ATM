@@ -1,5 +1,5 @@
 const video = document.getElementById("video");
-
+const btn = document.querySelectorAll("button");
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri("../models"),
@@ -22,7 +22,7 @@ function startVideo() {
 
 video.addEventListener("play", () => {
   const canvas = faceapi.createCanvasFromMedia(video);
-  
+
   const displaySize = { width: video.width, height: video.height };
   faceapi.matchDimensions(canvas, displaySize);
   setInterval(async () => {
@@ -40,16 +40,26 @@ video.addEventListener("play", () => {
 
     resizedDetections.forEach((result) => {
       const { age, gender, genderProbability } = result;
-      testAge = age;
+      Age = age;
     });
-    console.log(testAge);
+    console.log(Age);
 
-    if (testAge >= 55) {
-      changePage();
+    localStorage.setItem("Age", Age);
+    if (Age > 20) {
+      fontSizeUp();
+    } else {
+      fontNoramal();
     }
 
-    function changePage() {
-      location.href = "index2.html";
+    function fontSizeUp() {
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].style.fontSize = "60px";
+      }
+    }
+    function fontNoramal() {
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].style.fontSize = "22px";
+      }
     }
   }, 600);
 });
