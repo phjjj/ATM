@@ -45,21 +45,8 @@ video.addEventListener("play", () => {
     console.log(Age);
 
     localStorage.setItem("Age", Age);
-    if (Age > 20) {
-      fontSizeUp();
-    } else {
-      fontNoramal();
-    }
-
-    function fontSizeUp() {
-      for (var i = 0; i < btn.length; i++) {
-        btn[i].style.fontSize = "60px";
-      }
-    }
-    function fontNoramal() {
-      for (var i = 0; i < btn.length; i++) {
-        btn[i].style.fontSize = "22px";
-      }
+    if (Age > 25) {
+      location.href = "elderly-main.html";
     }
   }, 600);
 });
