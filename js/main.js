@@ -22,29 +22,28 @@ function startVideo() {
 
 video.addEventListener("play", () => {
   const canvas = faceapi.createCanvasFromMedia(video);
-
+  document.getElementById("video-box").append(canvas);
   const displaySize = { width: video.width, height: video.height };
   faceapi.matchDimensions(canvas, displaySize);
   setInterval(async () => {
-    const detections = await faceapi
+    const predictions = await faceapi
       .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
       .withFaceLandmarks()
-      .withFaceExpressions()
       .withAgeAndGender();
 
-    const resizedDetections = faceapi.resizeResults(detections, displaySize);
+    const resizedDetections = faceapi.resizeResults(predictions, displaySize);
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
 
     resizedDetections.forEach((result) => {
-      const { age, gender, genderProbability } = result;
+      const { age } = result;
+      new faceapi.draw.DrawTextField(
+        [`${faceapi.round(age, 0)} 세`],
+        result.detection.box.bottomLeft
+      ).draw(canvas);
       Age = age;
     });
-
-    document.querySelector("span").innerHTML = Age.toFixed(0) + "세";
-    span.style.fontSize="50px"
 
     localStorage.setItem("Age", Age);
     if (Age > 55) {
