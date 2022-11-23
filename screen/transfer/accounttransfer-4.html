@@ -13,13 +13,13 @@
   </head>
   <body>
     <div class="header">
-      <h1>전 화 번 호</h1>
+      <h1>금 액 입 력</h1>
     </div>
 
     <div class="container">
       <div class="main-left">
         <div class="box-text">
-          <p>계좌번호를 누르시고 [확인]을 눌러 주십시오.</p>
+          <p>보낼 금액을 누르시고 [확인]을 눌러 주십시오.</p>
         </div>
         <div>
           <input readonly />
@@ -55,11 +55,19 @@
           <button class="number" onclick="input.value=input.value+'9'">
             9
           </button>
-          <button></button>
+
+          <button class="number" onclick="input.value=input.value+'0'"></button>
+
           <button class="number" onclick="input.value=input.value+'0'">
             0
           </button>
           <button onclick="input.value=null">정정</button>
+          <button class="number" onclick="input.value=input.value+'천'">
+            천
+          </button>
+          <button class="number" onclick="input.value=input.value+'만'">
+            만
+          </button>
         </div>
         <div class="footer">
           <button
@@ -72,7 +80,7 @@
           <button
             class="btn-confirm"
             type="button"
-            onclick="location.href='accounttransfer-5.html'"
+            onclick="location.href='../process.html'"
           >
             확인
           </button>

@@ -1,5 +1,6 @@
 .main-center-box {
   display: flex;
+  flex-direction: row;
   width: 640px;
   height: 490px;
   background-color: rgba(217, 217, 217, 1);

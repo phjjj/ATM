@@ -1,6 +1,6 @@
 const video = document.getElementById("video");
 const btn = document.querySelectorAll("button");
-
+const span = document.querySelector("span");
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri("../models"),
   faceapi.nets.faceLandmark68Net.loadFromUri("../models"),
@@ -31,7 +31,7 @@ video.addEventListener("play", () => {
       .withFaceLandmarks()
       .withFaceExpressions()
       .withAgeAndGender();
-    console.log(detections);
+
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
     faceapi.draw.drawDetections(canvas, resizedDetections);
@@ -42,10 +42,12 @@ video.addEventListener("play", () => {
       const { age, gender, genderProbability } = result;
       Age = age;
     });
-    console.log(Age);
+
+    document.querySelector("span").innerHTML = Age.toFixed(0) + "세";
+    span.style.fontSize="50px"
 
     localStorage.setItem("Age", Age);
-    if (Age > 25) {
+    if (Age > 55) {
       location.href = "elderly-main.html";
     }
   }, 600);

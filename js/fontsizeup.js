@@ -3,7 +3,7 @@ const p = document.querySelectorAll("p");
 const pre = document.querySelectorAll("pre");
 var Age = localStorage.getItem("Age");
 
-if (Age > 25) {
+if (Age > 30) {
   for (var i = 0; i < btn.length; i++) {
     btn[i].style.fontSize = "60px";
   }

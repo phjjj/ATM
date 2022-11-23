@@ -15,8 +15,6 @@
   align-items: center;
 }
 
-
-
 .main-right,
 .main-left {
   display: flex;
@@ -24,11 +22,15 @@
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
+}
+
+span {
+  color: white;
+
+}
+
+.main-center-box {
+  display: flex;
+  flex-direction: column;
   
 }
-
-.main-left,
-.main-right {
-
-}
-
