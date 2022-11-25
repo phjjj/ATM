@@ -1,7 +1,7 @@
 const btn = document.querySelectorAll("button");
 var Age = localStorage.getItem("Age");
 
-if (Age > 25) {
+if (Age > 54) {
   fontSizeUp();
 }
 

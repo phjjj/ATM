@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/password.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/button.css" />
+    <link rel="stylesheet" href="../../css/background.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>전 자 납 부 번 호</h1>
+    </div>
+
+    <div class="container">
+      <div class="main-left">
+        <div class="box-text">
+          <p>전자납부번호를 누르신 후 [확인]을 눌러주십시오.</p>
+        </div>
+        <div>
+          <input readonly />
+        </div>
+      </div>
+
+      <div class="main-right">
+        <button
+          class="btn-cancel"
+          type="button"
+          onclick="location.href='../main.html'"
+        >
+          취소
+        </button>
+        <button
+          class="btn-confirm"
+          type="button"
+          onclick="location.href='utilitie-3.html'"
+        >
+          확인
+        </button>
+        <div class="numberpad">
+          <button class="number" onclick="input.value=input.value+'1'">
+            1
+          </button>
+          <button class="number" onclick="input.value=input.value+'2'">
+            2
+          </button>
+          <button class="number" onclick="input.value=input.value+'3'">
+            3
+          </button>
+          <button class="number" onclick="input.value=input.value+'4'">
+            4
+          </button>
+          <button class="number" onclick="input.value=input.value+'5'">
+            5
+          </button>
+          <button class="number" onclick="input.value=input.value+'6'">
+            6
+          </button>
+          <button class="number" onclick="input.value=input.value+'7'">
+            7
+          </button>
+          <button class="number" onclick="input.value=input.value+'8'">
+            8
+          </button>
+          <button class="number" onclick="input.value=input.value+'9'">
+            9
+          </button>
+          <button></button>
+          <button class="number" onclick="input.value=input.value+'0'">
+            0
+          </button>
+          <button onclick="input.value=null">정정</button>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/rrn.js"></script>
+    <script src="../../js/fontsizeup.js"></script>
+  </body>
+</html>

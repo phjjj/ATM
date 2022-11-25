@@ -1,9 +1,9 @@
 const btn = document.querySelectorAll("button");
 var Age = localStorage.getItem("Age");
 
-if (Age > 25) {
-  fontSizeUp();
-}
+localStorage.setItem("Age", 55);
+
+fontSizeUp();
 
 function fontSizeUp() {
   for (var i = 0; i < btn.length; i++) {

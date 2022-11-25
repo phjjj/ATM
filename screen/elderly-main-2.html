@@ -7,7 +7,6 @@
 
     <title>Document</title>
     <script defer src="../js/face-api.min.js"></script>
-    <script defer src="../js/main.js"></script>
 
     <link rel="stylesheet" href="../css/container.css" />
     <link rel="stylesheet" href="../css/reset.css" />
@@ -24,70 +23,40 @@
         <button
           class="btn"
           type="button"
-          onclick="location.href='withdraw/caution.html'"
-        >
-          예금인출
-        </button>
-        <button
-          class="btn"
-          type="button"
-          onclick="location.href='reference/reference.html'"
-        >
-          조회
-        </button>
-        <button
-          class="btn"
-          type="button"
-          onclick="location.href='deposit/deposit.html'"
-        >
-          무통장입금
-        </button>
-        <button
-          class="btn"
-          type="button"
           onclick="location.href='bankbook/insert.html'"
         >
-          통장정리
+          통장정리하기
         </button>
         <button
-          type="button"
-          onclick="location.href='transfer/accounttransfer.html'"
           class="btn"
+          type="button"
+          onclick="location.href='transfer/transfer.html'"
+          backgoriun
         >
-          계좌이체
+          계좌이체하기
         </button>
       </ul>
 
       <div class="main-center">
-        <div class="main-center-box" id="video-box">
-          <video id="video" width="300" height="300" autoplay muted></video>
-        </div>
+        <div class="main-center-box"></div>
       </div>
       <ul class="main-right">
         <button
+          class="btn"
           type="button"
           onclick="location.href='utilitie/utilitie.html'"
-          class="btn"
         >
-          공과금
+          공과금 내기
         </button>
         <button
+          class="btn"
           type="button"
           onclick="location.href='report/report.html'"
-          class="btn"
         >
           분실신고
         </button>
-        <button
-          type="button"
-          onclick="location.href='elderly-main.html'" 
-
-          class="btn"
-          style="font-size: 60px"
-        >
-          큰글씨모드
-        </button>
       </ul>
     </div>
+    <script src="../js/eldery-main.js"></script>
   </body>
 </html>
