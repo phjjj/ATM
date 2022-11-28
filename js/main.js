@@ -49,5 +49,5 @@ video.addEventListener("play", () => {
     if (Age > 55) {
       location.href = "elderly-main.html";
     }
-  }, 600);
+  }, 100);
 });
